@@ -1,0 +1,13 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  background-color: cornsilk;
+  border: 2px solid black;
+  width: 500px;
+  margin: 20px auto 0;
+  padding: 10px;
+}
