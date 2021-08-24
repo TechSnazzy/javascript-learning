@@ -12,5 +12,8 @@
 - Objects (properties and methods).
 - Functions (group a series of statements).
 - Method (a function inside an object).
-- Calling a function ( functionName() );
+- Declaring a function ( function name(parameters) { code } )
+- Calling a function ( functionName(arguments) );
 - Code block ( { group of statements here } ).
+- Returning a single value from a function.
+- Returning multiple values from a function.
