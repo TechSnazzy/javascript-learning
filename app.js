@@ -1,6 +1,7 @@
-var message = 'Hello and welcome to my site!';
+var el = document.getElementById('message');
+el.textContent = 'Click to Update!';
 
 function updateMessage() {
-  var el = document.getElementById("para");
-  el.textContent = "This is an updated message!"
+  var el = document.getElementById('message');
+  el.textContent = 'This is an updated message!';
 }
