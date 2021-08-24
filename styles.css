@@ -2,5 +2,10 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 24px;
+}
+
+#para {
+  display: grid;
+  height: 100px;
+  align-items: center;
 }
