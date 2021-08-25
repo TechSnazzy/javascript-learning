@@ -23,3 +23,4 @@
 - Variable scope (local and global).
 - Naming collisions.
 - Objects ( group together a set of variables (`properties`) and functions (`methods`) ).
+- Object literal notation.

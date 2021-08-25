@@ -2,10 +2,7 @@ var house = {
   totalRooms: 10,
   occupiedRooms: 4,
   roomsAvailable: function () {
-    var totalRooms = this.totalRooms;
-    var occupiedRooms = this.occupiedRooms;
-    var roomsLeft = totalRooms - occupiedRooms;
-    return roomsLeft;
+    return this.totalRooms - this.occupiedRooms;
   },
   isOpen: true,
   name: 'Morrison Manor',
