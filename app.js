@@ -1,25 +1,31 @@
-// Create new object.
-var hotel = new Object();
+// Create many objects contructor notation
 
-// Add properties to the object.
-hotel.name = 'Morrison Manor';
-hotel.price = 200;
-hotel.rooms = 40;
-hotel.booked = 25;
-hotel.checkAvailability = function () {
-  return this.room - this.booked;
-};
-hotel['The Cats'] = 'Macy and Milo';
+// Create a new constructor function
+function Hotel(name, rooms, booked) {
+  this.name = name;
+  this.rooms = rooms;
+  this.booked = booked;
+  this.checkAvailability = function () {
+    return this.rooms - this.booked;
+  };
+}
 
-// Display the object.
-console.log(hotel);
+// Create new Hotel instances
+var quayHotel = new Hotel('Quay Hotel', 40, 25);
+var parkHotel = new Hotel('Park Hotel', 50, 37);
 
-// Delete the hotel price property.
-delete hotel.price;
+// Select hotel name headers
+var quayHeader = document.getElementById('quayName');
+var parkHeader = document.getElementById('parkName');
 
-// Set the hotel name to a blank string.
-hotel.price = '';
+// Select hotel rooms available
+var quayRooms = document.getElementById('quayRooms');
+var parkRooms = document.getElementById('parkRooms');
 
-// Display one property of the object using bracket notation.
-var theCats = hotel['The Cats'];
-console.log(theCats);
+// Hotel Quay
+quayHeader.textContent = quayHotel.name;
+quayRooms.textContent = `There are ${quayHotel.checkAvailability()} rooms available.`;
+
+// Hotel Park
+parkHeader.textContent = parkHotel.name;
+parkRooms.textContent = `There are ${parkHotel.checkAvailability()} rooms available.`;
