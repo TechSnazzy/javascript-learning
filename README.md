@@ -24,3 +24,5 @@
 - Naming collisions.
 - Objects ( group together a set of variables (`properties`) and functions (`methods`) ).
 - Object literal notation.
+- Creating a new object ( `var hotel = new Object()` ). 
+- Adding a property ( `hotel.price = 200;` ).
