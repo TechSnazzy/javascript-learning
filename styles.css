@@ -6,6 +6,7 @@
 
 #main {
   background-color: tomato;
+  color: white;
   width: 400px;
   margin: 20px auto 0;
   border: 2px solid black;
@@ -13,28 +14,4 @@
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-}
-
-.box {
-  margin: 10px;
-  padding: 10px 10px 30px;
-  border: 2px solid black;
-  background-color: cornsilk;
-  font-size: 24px;
-}
-
-#message {
-  display: grid;
-  height: 150px;
-  align-items: center;
-  font-size: 24px;
-}
-
-#button {
-  background-color: tomato;
-  width: 100px;
-  height: 50px;
-  font-size: 24px;
-  border: none;
-  color: white;
 }
