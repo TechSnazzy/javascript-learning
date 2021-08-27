@@ -29,3 +29,5 @@
 - This keyword.
 - Method of an object.
 - Function expression as a method.
+- Arrays in objects ( `costs.room[0]` ).
+- Objects in arrays ( `costs[2].phone` ).
