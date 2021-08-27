@@ -1,5 +1,6 @@
 // EXAMPLES OF CREATING OBJECTS
 
+// =============================================
 // Create a Cat object with a constructor function.
 // Use this to create multiple objects.
 
@@ -16,6 +17,7 @@ var milo = new Cat('Milo', 3, 'black'); // new milo instance
 
 console.log(`${macy.name} and ${milo.name} are cats.`);
 
+// =============================================
 // Create a Dog object with literal notation
 
 var dog = {}; // new dog object
@@ -25,6 +27,7 @@ dog.color = 'white';
 
 console.log(`${dog.name} was ${dog.age} and ${dog.color}.`);
 
+// =============================================
 // Create a Car object with object constructor
 
 var car = new Object(); // new car object
@@ -34,6 +37,7 @@ car.year = 2017;
 
 console.log(`${car.year} ${car.make} ${car.model}.`);
 
+// =============================================
 // Another example of creating a single object that includes properties and a method that uses the this keyword
 
 var hotel = {
@@ -49,6 +53,7 @@ console.log(
   `The ${hotel.name} has ${hotel.checkAvailability()} rooms available.`
 );
 
+// =============================================
 // This one uses a function to create an object that uses the this keyword to grab the innerWidth and innerHeight properties of the document window object.
 // console.log(window) to see all the window properties.
 
@@ -70,3 +75,17 @@ var showWidthHeight = function () {
 
 // Call the function to write the width and height
 showWidthHeight();
+
+// =============================================
+// Create an object and a function and move the function into the object.
+
+var width = 600; // Create a width variable
+var shape = { width: 300 }; // Create a shape object
+
+var showWidth = function () {
+  document.write(this.width);
+}; // Create a showWidth named function with the this keyword referring to width. At this point is is referring to the width variable.
+
+shape.getWidth = showWidth; // Move the showWidth named function into the shape object and rename it to getWidth().
+
+shape.getWidth(); // Display the shape.getWidth() method in the document's window object.
