@@ -3,20 +3,22 @@
 // Create a Cat object with a constructor function.
 // Use this to create multiple objects.
 
+// This is an object template
+// It uses the this keyword
 function Cat(name, age, color) {
   this.name = name;
   this.age = age;
   this.color = color;
 }
 
-var macy = new Cat('Macy', 4, 'gray');
-var milo = new Cat('Milo', 3, 'black');
+var macy = new Cat('Macy', 4, 'gray'); // new macy instance
+var milo = new Cat('Milo', 3, 'black'); // new milo instance
 
 console.log(`${macy.name} and ${milo.name} are cats.`)
 
 // Create a Dog object with literal notation
 
-var dog = {};
+var dog = {}; // new dog object
 dog.name = 'Snowy';
 dog.age = 14;
 dog.color = 'white';
@@ -25,7 +27,7 @@ console.log(`${dog.name} was ${dog.age} and ${dog.color}.`);
 
 // Create a Car object with object constructor
 
-var car = new Object();
+var car = new Object(); // new car object
 car.make = 'Subaru';
 car.model = 'Crosstrek';
 car.year = 2017;
