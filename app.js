@@ -63,10 +63,10 @@ var width = windowSize()[0];
 var height = windowSize()[1];
 
 // Create a function that writes the width and height to the window object
-var showWidthHeight = function() {
+var showWidthHeight = function () {
   document.write(`This window is ${this.width} wide.`);
   document.write(`This window is also ${height} high.`);
-}
+};
 
 // Call the function to write the width and height
 showWidthHeight();

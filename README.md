@@ -26,3 +26,6 @@
 - Object literal notation.
 - Creating a new object ( `var hotel = new Object()` ). 
 - Adding a property ( `hotel.price = 200;` ).
+- This keyword.
+- Method of an object.
+- Function expression as a method.
