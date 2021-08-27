@@ -58,10 +58,15 @@ function windowSize() {
   return [width, height];
 }
 
+// Create variables of the width and height
 var width = windowSize()[0];
 var height = windowSize()[1];
 
-document.write(`This window is ${this.width} wide.`);
-document.write(`This window is also ${height} high.`);
+// Create a function that writes the width and height to the window object
+var showWidthHeight = function() {
+  document.write(`This window is ${this.width} wide.`);
+  document.write(`This window is also ${height} high.`);
+}
 
-console.log(`The browser is ${width}px wide and is ${height}px high.`);
+// Call the function to write the width and height
+showWidthHeight();
