@@ -1,6 +1,7 @@
 // EXAMPLES OF CREATING OBJECTS
 
 // Create a Cat object with a constructor function.
+// Use this to create multiple objects.
 
 function Cat(name, age, color) {
   this.name = name;
