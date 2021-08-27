@@ -14,7 +14,7 @@ function Cat(name, age, color) {
 var macy = new Cat('Macy', 4, 'gray'); // new macy instance
 var milo = new Cat('Milo', 3, 'black'); // new milo instance
 
-console.log(`${macy.name} and ${milo.name} are cats.`)
+console.log(`${macy.name} and ${milo.name} are cats.`);
 
 // Create a Dog object with literal notation
 
@@ -32,17 +32,36 @@ car.make = 'Subaru';
 car.model = 'Crosstrek';
 car.year = 2017;
 
-console.log(`${car.year} ${car.make} ${car.model}.`)
+console.log(`${car.year} ${car.make} ${car.model}.`);
 
 // Another example of creating a single object that includes properties and a method that uses the this keyword
 
 var hotel = {
-  name: "Hilton Hotel",
+  name: 'Hilton Hotel',
   rooms: 40,
   booked: 20,
-  checkAvailability: function() {
+  checkAvailability: function () {
     return this.rooms - this.booked;
-  }
+  },
+};
+
+console.log(
+  `The ${hotel.name} has ${hotel.checkAvailability()} rooms available.`
+);
+
+// This one uses a function to create an object that uses the this keyword to grab the innerWidth and innerHeight properties of the document window object.
+// console.log(window) to see all the window properties.
+
+function windowSize() {
+  var width = this.innerWidth; // width of browser window
+  var height = this.innerHeight; // height of browser window
+  return [width, height];
 }
 
-console.log(`The ${hotel.name} has ${hotel.checkAvailability()} rooms available.`)
+var width = windowSize()[0];
+var height = windowSize()[1];
+
+document.write(`This window is ${this.width} wide.`);
+document.write(`This window is also ${height} high.`);
+
+console.log(`The browser is ${width}px wide and is ${height}px high.`);
