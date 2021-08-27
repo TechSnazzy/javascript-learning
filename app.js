@@ -33,3 +33,16 @@ car.model = 'Crosstrek';
 car.year = 2017;
 
 console.log(`${car.year} ${car.make} ${car.model}.`)
+
+// Another example of creating a single object that includes properties and a method that uses the this keyword
+
+var hotel = {
+  name: "Hilton Hotel",
+  rooms: 40,
+  booked: 20,
+  checkAvailability: function() {
+    return this.rooms - this.booked;
+  }
+}
+
+console.log(`The ${hotel.name} has ${hotel.checkAvailability()} rooms available.`)
