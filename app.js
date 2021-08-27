@@ -1,49 +1,32 @@
-// Create many objects contructor notation
+// EXAMPLES OF CREATING OBJECTS
 
-// Create a new constructor function
-function Hotel(name, rooms, booked, gym) {
+// Create a Cat object with a constructor function.
+
+function Cat(name, age, color) {
   this.name = name;
-  this.rooms = rooms;
-  this.booked = booked;
-  this.gym = gym;
-  this.checkAvailability = function () {
-    return this.rooms - this.booked;
-  };
+  this.age = age;
+  this.color = color;
 }
 
-// Create new Hotel instances
-var quayHotel = new Hotel('Quay Hotel', 40, 25, true);
-var parkHotel = new Hotel('Park Hotel', 50, 37, true);
-var hiltonHotel = new Hotel('Hilton Hotel', 100, 63, false);
+var macy = new Cat('Macy', 4, 'gray');
+var milo = new Cat('Milo', 3, 'black');
 
-// Select hotel name headers
-var quayHeader = document.getElementById('quayName');
-var parkHeader = document.getElementById('parkName');
-var hiltonHeader = document.getElementById('hiltonName');
+console.log(`${macy.name} and ${milo.name} are cats.`)
 
-// Select hotel rooms available
-var quayRooms = document.getElementById('quayRooms');
-var parkRooms = document.getElementById('parkRooms');
-var hiltonRooms = document.getElementById('hiltonRooms');
+// Create a Dog object with literal notation
 
-// Select hotel gyms
-var quayGym = document.getElementById('quayGym');
-var parkGym = document.getElementById('parkGym');
-var hiltonGym = document.getElementById('hiltonGym');
+var dog = {};
+dog.name = 'Snowy';
+dog.age = 14;
+dog.color = 'white';
 
-// Hotel Quay
-quayHeader.textContent = quayHotel.name;
-quayRooms.textContent = `There are ${quayHotel.checkAvailability()} rooms available.`;
-quayGym.textContent = "Gym: " + quayHotel.gym;
+console.log(`${dog.name} was ${dog.age} and ${dog.color}.`);
 
-// Hotel Park
-parkHeader.textContent = parkHotel.name;
-parkRooms.textContent = `There are ${parkHotel.checkAvailability()} rooms available.`;
-parkGym.textContent = 'Gym: ' + parkHotel.gym;
+// Create a Car object with object constructor
 
-// Hotel Hilton
-hiltonHeader.textContent = hiltonHotel.name;
-hiltonRooms.textContent = `There are ${hiltonHotel.checkAvailability()} rooms available.`;
-hiltonGym.textContent = 'Gym: ' + hiltonHotel.gym;
+var car = new Object();
+car.make = 'Subaru';
+car.model = 'Crosstrek';
+car.year = 2017;
 
-// Add new properties
+console.log(`${car.year} ${car.make} ${car.model}.`)
