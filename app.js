@@ -4,12 +4,12 @@
 var msg = '<h2>Browser Window</h2>';
 
 // Add to the html code with more code.
-msg += '<p>The window height is:</p>' + window.innerHeight;
-msg += '<p>The window width is:</p>' + window.innerWidth;
-msg += '<p>The window screen width is:</p>' + window.screen.width;
-msg += '<p>The window screen height is:</p>' + window.screen.height;
-msg += '<p>The window history length is:</p>' + window.history.length;
-msg += '<p>The window location is:</p>' + window.location;
+msg += '<p>The window height is:' + window.innerHeight + '</p>';
+msg += '<p>The window width is:' + window.innerWidth + '</p>';
+msg += '<p>The window screen width is:' + window.screen.width + '</p>';
+msg += '<p>The window screen height is:' + window.screen.height + '</p>';
+msg += '<p>The window history length is:' + window.history.length + '</p>';
+msg += '<p>The window location is:' + window.location + '</p>';
 
 // Select the #main ID.
 var el = document.getElementById('main');
@@ -18,3 +18,9 @@ var el = document.getElementById('main');
 el.innerHTML = msg;
 
 // ===========================================================
+
+var today = new Date();
+var year = today.getFullYear();
+
+var el = document.getElementById('footer');
+el.innerHTML = '<p>Copyright &copy;' + year + '</p>';
