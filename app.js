@@ -30,7 +30,13 @@
   var today; // Today's date
   var elEnds; // The element that shows the message about the offer ending
 
-  function offerExpires(today) {}
+  function offerExpires(today) {
+    // Declare variables within the function for local scope
+    // Add 7 days time (added in milliseconds)
+    // Create arrays to hold the names of days / months
+    // Collect the parts of the date to show on the page
+    // Create the message
+  }
 
   today = new Date(); // Put today's date in variable
   elEnds = document.getElementById('offerEnds');
