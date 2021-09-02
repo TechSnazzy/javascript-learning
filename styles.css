@@ -16,3 +16,21 @@
   grid-template-columns: 1fr;
   font-size: 24px;
 }
+
+li {
+  list-style-type: none;
+}
+
+.items {
+  background-color: mediumturquoise;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.alt-items {
+  background-color: cornsilk;
+  color: tomato;
+  padding: 10px;
+  margin: 10px;
+}

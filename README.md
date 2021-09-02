@@ -24,11 +24,13 @@
 - Naming collisions.
 - Objects ( group together a set of variables (`properties`) and functions (`methods`) ).
 - Object literal notation.
-- Creating a new object ( `var hotel = new Object()` ). 
+- Creating a new object ( `var hotel = new Object()` ).
 - Adding a property ( `hotel.price = 200;` ).
 - This keyword.
 - Method of an object.
 - Function expression as a method.
 - Arrays in objects ( `costs.room[0]` ).
 - Objects in arrays ( `costs[2].phone` ).
-- Conditional statements.
+- Conditional statements ( if/else, === ).
+- Logical operators (&&, ||, !).
+- DOM (four nodes: document, element, attribute, text).
