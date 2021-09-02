@@ -3,8 +3,8 @@
 
 // note: array syntax is faster than item() method
 
-var groceryList = document.querySelectorAll('li.items');
+var fruitList = document.querySelectorAll('li.items');
 
-for (var i = 0; i < groceryList.length; i++) {
-  groceryList[i].className = 'apple';
+for (var i = 0; i < fruitList.length; i++) {
+  fruitList[i].className = 'apple';
 }
