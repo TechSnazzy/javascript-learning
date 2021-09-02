@@ -3,7 +3,7 @@
 
 // note: array syntax is faster than item() method
 
-var groceryList = document.getElementsByTagName('li');
+var groceryList = document.querySelectorAll('li.items');
 
 for (var i = 0; i < groceryList.length; i++) {
   groceryList[i].className = 'apple';
