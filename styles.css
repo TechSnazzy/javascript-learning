@@ -17,6 +17,10 @@
   font-size: 24px;
 }
 
+h1 {
+  filter: drop-shadow(2px 2px 1px black);
+}
+
 li {
   list-style-type: none;
 }
@@ -26,11 +30,15 @@ li {
   color: black;
   padding: 10px;
   margin: 10px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 
-.alt-items {
-  background-color: cornsilk;
-  color: tomato;
+.apple {
+  background-color: red;
+  color: white;
   padding: 10px;
   margin: 10px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
