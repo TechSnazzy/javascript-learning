@@ -6,10 +6,5 @@
 var groceryList = document.getElementsByTagName('li');
 
 for (var i = 0; i < groceryList.length; i++) {
-  groceryList[i].className = 'apple'; // array syntax
-  //groceryList.item(i).className = 'apple'; // item() method
-}
-
-if (groceryList.length > 2) {
-  groceryList[1].className = 'banana';
+  groceryList[i].className = 'apple';
 }
