@@ -1,5 +1,7 @@
 # JavaScript Learning Notes
 
+Building a list where you click a button and an Apple list item is appended to the list.
+
 ## Terms
 
 - Statement (ends with ;).
