@@ -2,6 +2,16 @@
 
 Building a list where you click a button and an Apple list item is appended to the list.
 
+## Git Notes
+
+Push a project with all branches to GitHub.
+First create a repo and then do this.
+
+```bash
+git remote add origin https://github.com/TechSnazzy/javascript-learning.git
+git push --all
+```
+
 ## Terms
 
 - Statement (ends with ;).
