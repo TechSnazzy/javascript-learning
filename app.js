@@ -10,7 +10,7 @@ var paraText = para.firstChild.nodeValue;
 console.log(paraText);
 
 // ===== EXAMPLE 2 ================================
-// Select all the list items
+// Select all the whole collection of list items
 var listItemOneText = document.getElementsByClassName('list-items');
 
 // Get the content of the first list item and store it in a variable
@@ -18,3 +18,11 @@ var itemOne = listItemOneText[0].textContent;
 
 // Display in console
 console.log(itemOne);
+
+// ===== EXAMPLE 3 ================================
+// Select CSS elements
+var cssListItems = document.querySelectorAll('li.list-items');
+var cssItemTwo = cssListItems[1].textContent;
+console.log(cssItemTwo);
+
+// ===== EXAMPLE 4 ================================
