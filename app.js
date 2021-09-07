@@ -24,5 +24,3 @@ console.log(itemOne);
 var cssListItems = document.querySelectorAll('li.list-items');
 var cssItemTwo = cssListItems[1].textContent;
 console.log(cssItemTwo);
-
-// ===== EXAMPLE 4 ================================
