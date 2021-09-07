@@ -9,3 +9,5 @@ appleItem.appendChild(appleText);
 // And all the apple item to the list
 var getList = document.getElementById('list');
 getList.appendChild(appleItem);
+
+// Note: Remove an element with removeChild()
