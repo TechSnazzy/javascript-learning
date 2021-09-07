@@ -20,3 +20,15 @@
 .items {
   list-style-type: none;
 }
+
+.items a {
+  text-decoration: none;
+  color: white;
+  background-color: mediumturquoise;
+  padding: 5px;
+  margin: 5px;
+}
+
+.items a:hover {
+  background-color: orange;
+}
