@@ -1,15 +1,15 @@
-// Grab the paragraph element
-var paragraph = document.getElementById('paragraph');
+// Set a fruit variable to hold new list items in an array
+var fruits = ['🍎 Apples', '🍌 Banana', '🍓 Strawberry'];
 
-// Then grab the text of the paragraph element
-// The nodeValue property can only be used on a text element
-var paragraphText = paragraph.firstChild.nodeValue;
+// Grab the unordered list
+var list = document.getElementsByClassName('items');
 
-// Example 1: Display the Text Node
-console.log(paragraphText);
+// Function that will change list items
+function updateList() {
+  for (var i = 0; i < list.length; i++) {
+    list[i].innerHTML = fruits[i];
+  }
+}
 
-// Example 2: Display the text of the Containing Element
-console.log(paragraph.textContent);
-
-// Example 3: Replace the text of the Containing Element
-paragraph.innerHTML = '<p>The paragraph was here</p>';
+// Call the function to update the list
+updateList();
