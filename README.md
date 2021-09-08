@@ -14,6 +14,7 @@ git push --all
 
 ## Security
 - [Google Application Security (XSS)](https://www.google.com/about/appsecurity/learning/xss/)
+- [Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 
 ## Terms
 
