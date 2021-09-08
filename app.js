@@ -5,8 +5,10 @@
 
 function changeColor() {
   var para = document.getElementById('paragraph');
+  var items = document.getElementsByClassName('items');
   if (para.hasAttribute('class')) {
     para.setAttribute('class', 'yellow');
+    items[1].setAttribute('class', 'items yellow');
   } else {
     para.setAttribute('class', 'orange');
   }
