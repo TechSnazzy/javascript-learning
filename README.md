@@ -12,6 +12,9 @@ git remote add origin https://github.com/TechSnazzy/javascript-learning.git
 git push --all
 ```
 
+## Security
+- [Google Application Security (XSS)](https://www.google.com/about/appsecurity/learning/xss/)
+
 ## Terms
 
 - Statement (ends with ;).
