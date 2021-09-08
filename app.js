@@ -1,3 +1,4 @@
+// DOM MANIPULATION EXAMPLE
 // STEP 1: Store the full list in the variable
 var getList = document.getElementById('list');
 
