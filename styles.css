@@ -24,3 +24,20 @@ body {
 .items {
   list-style-type: none;
 }
+
+input {
+  font-size: 24px;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+button {
+  height: 50px;
+  width: 150px;
+  font-size: 24px;
+  border: none;
+  background-color: green;
+  color: white;
+  margin: 20px auto 0;
+}
