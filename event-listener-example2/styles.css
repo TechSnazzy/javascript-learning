@@ -1,0 +1,21 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  background-color: cornsilk;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+strong {
+  background-color: mediumturquoise;
+  color: #303030;
+}
