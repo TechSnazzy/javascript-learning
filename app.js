@@ -17,7 +17,11 @@ function checkUsername() {
 }
 
 /*
-Event listener that runs the function
-when the input loses focus
+Handle the event with an event listener
 */
 username.addEventListener('blur', checkUsername, false);
+
+/*
+Handle the event with an event handler
+*/
+//username.onblur = checkUsername;
