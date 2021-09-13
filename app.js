@@ -1,11 +1,17 @@
+// First, select the input element
+var elInput = document.getElementById('username');
+
 function checkUsername() {
-  var elMsg = document.getElementById('feedback');
-  if (this.value.length < 5) {
-    elMsg.textContent = 'Username must be 5 char or more!!';
+  // Then select the feedback element
+  var elFeedbackMsg = document.getElementById('feedback');
+
+  // Create a conditional
+  if (elInput.value.length < 5) {
+    elFeedbackMsg.textContent = 'Username must be 5 characters or more!!'
   } else {
-    elMsg.textContent = '';
+    elFeedbackMsg.textContent = '';
   }
 }
 
-var elUsername = document.getElementById('username');
-elUsername.addEventListener('blur', checkUsername, false);
+// Create event listener
+elInput.addEventListener('blur', checkUsername, false)
