@@ -6,7 +6,9 @@
 
 #main {
   background-color: cornsilk;
+  border: 2px solid black;
   width: 600px;
+  height: 300px;
   margin: 20px auto;
   padding: 20px;
 }
@@ -15,7 +17,18 @@ h1 {
   margin-bottom: 20px;
 }
 
-strong {
+#grandparent {
+  background-color: silver;
+  padding: 20px;
+}
+
+#parent {
+  background-color: olivedrab;
+  padding: 20px;
+}
+
+#child {
   background-color: mediumturquoise;
+  padding: 2px;
   color: #303030;
 }
