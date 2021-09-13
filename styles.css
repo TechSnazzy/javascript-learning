@@ -38,7 +38,15 @@ button {
   width: 150px;
   font-size: 24px;
   border: none;
-  background-color: green;
-  color: white;
+  background-color: mediumturquoise;
   margin: 20px auto 0;
+}
+
+#feedback {
+  width: 300px;
+  margin: 10px auto 0;
+  padding: 10px;
+  background-color: cornsilk;
+  color: black;
+  border: 2px solid black;
 }
