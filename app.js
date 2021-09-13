@@ -1,17 +1,23 @@
-// First, select the input element
-var elInput = document.getElementById('username');
+/*
+Select username and feedback elements
+*/
+var username = document.getElementById('username');
+var feedback = document.getElementById('feedback');
 
+/*
+Create a function that checks the
+length of the value of the username input
+*/
 function checkUsername() {
-  // Then select the feedback element
-  var elFeedbackMsg = document.getElementById('feedback');
-
-  // Create a conditional
-  if (elInput.value.length < 5) {
-    elFeedbackMsg.textContent = 'Username must be 5 characters or more!!'
+  if (this.value.length < 5) {
+    feedback.textContent = 'Username must be 5 characters or more!';
   } else {
-    elFeedbackMsg.textContent = '';
+    feedback.textContent = '';
   }
 }
 
-// Create event listener
-elInput.addEventListener('blur', checkUsername, false)
+/*
+Event listener that runs the function
+when the input loses focus
+*/
+username.addEventListener('blur', checkUsername, false);
