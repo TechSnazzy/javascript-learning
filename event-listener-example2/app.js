@@ -1,19 +1,20 @@
+const main = document.getElementById('main');
 const grandparent = document.getElementById('grandparent');
 const parent = document.getElementById('parent');
 const child = document.getElementById('child');
 
-grandparent.addEventListener('click', function () {
-  console.log('I am the GRANDPARENT who is bubbling.');
+main.addEventListener('click', function () {
+  console.log('MAIN, bubbling.');
 });
 
-parent.addEventListener(
-  'click',
-  function () {
-    console.log('I am the PARENT who is capturing.');
-  },
-  true
-);
+grandparent.addEventListener('click', function () {
+  console.log('GRANDPARENT, capturing.');
+});
+
+parent.addEventListener('click', function () {
+  console.log('PARENT, bubbling.');
+});
 
 child.addEventListener('click', function () {
-  console.log('I am the CHILD who is bubbling.');
+  console.log('CHILD, bubbling.');
 });
