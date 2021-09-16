@@ -19,9 +19,9 @@ function checkUsername() {
 /*
 Handle the event with an event listener
 */
-username.addEventListener('blur', checkUsername, false);
+//username.addEventListener('blur', checkUsername, false);
 
 /*
 Handle the event with an event handler
 */
-//username.onblur = checkUsername;
+username.onblur = checkUsername;
