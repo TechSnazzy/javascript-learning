@@ -18,3 +18,9 @@ parent.addEventListener('click', function () {
 child.addEventListener('click', function () {
   console.log('CHILD, bubbling.');
 });
+
+/*
+1. Select the element.
+2. Bind the event to the DOM node.
+3. Call the code that will be run when the event occurs. 
+*/

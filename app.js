@@ -9,6 +9,10 @@ Create a function that checks the
 length of the value of the username input
 */
 function checkUsername() {
+  // explaining this.value.length
+  // get the value of username
+  // and get the length of the value
+  // this refers to the element at the beginning of the event listener which is the object at the top of the global scope
   if (this.value.length < 5) {
     feedback.textContent = 'Username must be 5 characters or more!';
   } else {
