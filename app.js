@@ -18,6 +18,10 @@ function checkUsername(minLength) {
 /*
 3. Create an event listener that checks for focus on the input.
 */
-username.addEventListener('blur', function () {
-  checkUsername(5);
-});
+username.addEventListener(
+  'blur',
+  function () {
+    checkUsername(5);
+  },
+  false
+);
