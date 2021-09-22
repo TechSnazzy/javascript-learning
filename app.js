@@ -8,5 +8,9 @@ var username = document.getElementById('username');
 2. Create a function that checks the username input.
 */
 function checkUsername() {
-  console.log("Checking username")
+  console.log('Checking username');
 }
+
+username.addEventListener('blur', function () {
+  checkUsername();
+});
