@@ -7,3 +7,12 @@
 body {
   background-color: #404040;
 }
+
+#main {
+  width: 800px;
+  background-color: tomato;
+  margin: 20px auto 0;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
