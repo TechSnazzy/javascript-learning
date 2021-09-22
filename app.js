@@ -9,9 +9,9 @@ var username = document.getElementById('username');
 */
 function checkUsername(minLength) {
   if (username.value.length < minLength) {
-    feedback.textContent = "Requires 5 characters."
+    feedback.textContent = 'Username requires 5 characters.';
   } else {
-    feedback.textContent = "Meets the requirements  ";
+    feedback.textContent = 'Username meets requirements.';
   }
 }
 
