@@ -16,3 +16,11 @@ body {
   color: white;
   text-align: center;
 }
+
+#username {
+  font-size: 24px;
+  padding: 5px;
+  margin: 20px;
+  border: none;
+  border-radius: 4px;
+}
