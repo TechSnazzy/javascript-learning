@@ -23,5 +23,5 @@ username.addEventListener(
   function () {
     checkUsername(5);
   },
-  false
+  false // false is bubbling and true is capturing
 );
