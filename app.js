@@ -2,9 +2,10 @@
 Select the button.
 */
 var myBtn = document.getElementById('myBtn');
+var main = document.getElementById('main');
 
 /*
-Check the event object.
+Check the event object by clicking on the button.
 */
 myBtn.addEventListener('click', function (e) {
   console.log(e);
@@ -14,4 +15,11 @@ myBtn.addEventListener('click', function (e) {
   } else {
     console.log('Nope, the CTRL key was not pressed.');
   }
+});
+
+/*
+Check the event object by clicking on the main div.
+*/
+main.addEventListener('click', function (e) {
+  console.log(e);
 });
