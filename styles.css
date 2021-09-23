@@ -7,36 +7,3 @@
 body {
   background-color: #404040;
 }
-
-#main {
-  width: 800px;
-  background-color: tomato;
-  margin: 20px auto 0;
-  padding: 20px;
-  color: white;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-img {
-  width: 500px;
-  margin: 20px auto 0;
-}
-
-input {
-  font-size: 24px;
-  border: none;
-  padding: 5px;
-  margin: 20px auto 20px;
-  width: 300px;
-}
-
-button {
-  height: 50px;
-  width: 150px;
-  font-size: 24px;
-  border: none;
-  background-color: mediumturquoise;
-  margin: 20px auto 0;
-}
