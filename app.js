@@ -30,6 +30,7 @@ Change background of list items using event delegation
 */
 myList.addEventListener('click', function (e) {
   // Select the target from the event object
+  // Note that the target is the ul which is the parent of the list items
   var target = e.target;
 
   // Use the matches() method on target
