@@ -28,3 +28,11 @@ main.addEventListener('click', function (e) {
 /*
 Change background of list items using event delegation
 */
+myList.addEventListener('click', function (e) {
+  // Select the target from the event object
+  var target = e.target;
+
+  if (target.matches('li')) {
+    target.style.backgroundColor = 'red';
+  }
+});
