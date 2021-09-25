@@ -7,6 +7,7 @@ main.addEventListener('click', function () {
   console.log('Main was clicked!');
 });
 
-myBtn.addEventListener('click', function () {
+myBtn.addEventListener('click', function (e) {
+  e.stopPropagation();
   console.log('My button was clicked!');
 });
