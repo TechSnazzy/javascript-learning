@@ -6,6 +6,13 @@ var main = document.getElementById('main');
 var myList = document.getElementById('myList');
 
 /*
+Check the event object by clicking on the main div.
+*/
+main.addEventListener('click', function (e) {
+  console.log(e);
+});
+
+/*
 Check the event object by clicking on the button.
 */
 myBtn.addEventListener('click', function (e) {
@@ -16,13 +23,6 @@ myBtn.addEventListener('click', function (e) {
   } else {
     console.log('Nope, the CTRL key was not pressed.');
   }
-});
-
-/*
-Check the event object by clicking on the main div.
-*/
-main.addEventListener('click', function (e) {
-  console.log(e);
 });
 
 /*
