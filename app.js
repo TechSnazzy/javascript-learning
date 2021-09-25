@@ -1,9 +1,9 @@
 /*
 Select the button.
 */
-var myBtn = document.getElementById('myBtn');
-var main = document.getElementById('main');
-var myList = document.getElementById('myList');
+const main = document.getElementById('main');
+const myBtn = document.getElementById('myBtn');
+const myList = document.getElementById('myList');
 
 /*
 Check the event object by clicking on the main div.
@@ -31,7 +31,7 @@ Change background of list items using event delegation
 myList.addEventListener('click', function (e) {
   // Select the target from the event object
   // Note that the target is the ul which is the parent of the list items
-  var target = e.target;
+  const target = e.target;
 
   // Use the matches() method on target
   if (target.matches('li')) {
