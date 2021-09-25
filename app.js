@@ -32,6 +32,7 @@ myList.addEventListener('click', function (e) {
   // Select the target from the event object
   var target = e.target;
 
+  // Use the matches() method on target
   if (target.matches('li')) {
     target.style.backgroundColor = 'red';
   }
