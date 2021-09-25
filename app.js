@@ -3,6 +3,7 @@ Select the button.
 */
 var myBtn = document.getElementById('myBtn');
 var main = document.getElementById('main');
+var myList = document.getElementById('myList');
 
 /*
 Check the event object by clicking on the button.
@@ -23,3 +24,7 @@ Check the event object by clicking on the main div.
 main.addEventListener('click', function (e) {
   console.log(e);
 });
+
+/*
+Change background of list items using event delegation
+*/
