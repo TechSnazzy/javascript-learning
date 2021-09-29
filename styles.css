@@ -19,6 +19,14 @@ body {
   text-align: center;
 }
 
+input {
+  width: 200px;
+  margin: 20px auto 0;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+}
+
 button {
   background-color: mediumturquoise;
   width: 150px;
