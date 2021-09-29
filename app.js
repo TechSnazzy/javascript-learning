@@ -14,3 +14,13 @@ myBtn.addEventListener('click', function (e) {
   console.log('My button was clicked!');
   main.style.backgroundColor = 'orange';
 });
+
+// Declare function
+function setup() {
+  var username; // Create variable
+  username = document.getElementById('username'); // Get input
+  username.focus(); // Give input focus
+}
+
+// When page loaded call setup()
+window.addEventListener('load', setup, false);
